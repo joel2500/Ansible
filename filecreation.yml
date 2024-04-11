@@ -1,6 +1,6 @@
 ---
 - name: Create file with specific content
-  hosts: localhost
+  hosts: test
   gather_facts: false
 
   tasks:
