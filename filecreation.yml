@@ -1,0 +1,15 @@
+---
+- name: Create file with specific content
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Create file
+      ansible.builtin.file:
+        path: "/path/to/your/file.txt"
+        state: touch
+
+    - name: Add content to file
+      ansible.builtin.lineinfile:
+        path: "/path/to/your/file.txt"
+        line: "This is for AWX test"
