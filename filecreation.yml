@@ -6,10 +6,10 @@
   tasks:
     - name: Create file
       ansible.builtin.file:
-        path: "/path/to/your/file.txt"
+        path: "/home/ubuntu/file.txt"
         state: touch
 
     - name: Add content to file
       ansible.builtin.lineinfile:
-        path: "/path/to/your/file.txt"
+        path: "/home/ubuntu/file.txt"
         line: "This is for AWX test"
