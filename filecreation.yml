@@ -6,7 +6,7 @@
   tasks:
     - name: Create file
       shell:
-        "ip addr"
+        "cat /home/ubuntu/log_04112024.log"
       register: os_info
     
     - debug:
